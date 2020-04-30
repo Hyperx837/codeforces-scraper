@@ -1,0 +1,5 @@
+setup.py
+codeforce_automator.egg-info/PKG-INFO
+codeforce_automator.egg-info/SOURCES.txt
+codeforce_automator.egg-info/dependency_links.txt
+codeforce_automator.egg-info/top_level.txt
