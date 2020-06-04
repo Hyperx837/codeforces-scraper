@@ -25,7 +25,6 @@ def main_gui(username):
 
     widgets = []
     user_info_names = ['current_rating', 'current_rank', 'max_rating', 'max_rank']
-    positions = [180, 200, 220, 240]
     resp = get_url(username.replace(' ', '_'))
     cleaned_data = clean_data(resp)
     mul_by_spaces = lambda info: info + (4 - len(info)) * ' '
@@ -40,6 +39,7 @@ def main_gui(username):
         handle = tk.Label(frame, text=f'User: {username}')
         handle.place(x=120, y=140)
 
+        positions = [180, 200, 220, 240]
         for message, y in zip(messages, positions):
             info_label = tk.Label(frame, text=message)
             info_label.place(x=20, y=y)
